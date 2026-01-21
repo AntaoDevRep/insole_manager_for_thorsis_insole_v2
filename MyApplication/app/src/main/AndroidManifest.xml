@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kenp.minga.insolesmanager">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!--
+         these permissions are required for bluetooth discovery
+         make sure this permission is allowed on the mobile phone or tablet......
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/sole2"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.gait.GaitTestActivity"></activity>
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.AddDeviceActivity"
+            android:label="Gaming Insole Setting" />
+        <activity android:name=".activities.ServiceTestActivity" /> <!-- service配置开始 -->
+        <service android:name=".service.CountService" /> <!-- service配置结束 -->
+        <!-- service配置开始 -->
+        <service android:name=".service.InsoleBluService" /> <!-- service配置结束 -->
+        <!-- service配置开始 -->
+        <activity android:name=".PluginTestActivity" />
+        <activity android:name=".activities.InsolesManagerActivity" />
+        <activity android:name=".activities.InsoleTestActivity" />
+        <activity android:name=".activities.DebugActivity" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+    </application>
+
+</manifest>

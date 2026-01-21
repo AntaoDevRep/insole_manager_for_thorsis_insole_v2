@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <item
+        android:id="@+id/setting_item"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/setting_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/connect_item"
+        android:icon="@mipmap/connection"
+        android:title="@string/connection_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/gait_test_item"
+        android:icon="@mipmap/connection"
+        android:title="@string/gait_test_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/add_insole_item"
+        android:icon="@mipmap/set_side"
+        android:title="@string/insole_setting_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/test_plugin_item"
+        android:icon="@mipmap/test_plugin"
+        android:title="@string/plugin_test_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/test_insole_item"
+        android:icon="@mipmap/data"
+        android:title="@string/insole_data_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/debug_item"
+        android:icon="@mipmap/ic_launcher"
+        android:title="@string/debugging_button"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        />
+</menu>

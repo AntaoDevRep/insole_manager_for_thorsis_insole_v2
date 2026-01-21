@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_device"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp"
+    tools:context="com.kenp.minga.insolesmanager.activities.AddDeviceActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scan_btn"
+        android:text="scan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unpair_all_btn"
+        android:text="unpair all"
+        android:layout_toRightOf="@id/scan_btn"
+        android:layout_alignParentBottom="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/unpair_btn"
+        android:text="unpair"
+        android:layout_toRightOf="@id/unpair_all_btn"
+        android:layout_alignParentBottom="true"    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pair_btn"
+        android:text="pair"
+        android:layout_toRightOf="@id/unpair_btn"
+        android:layout_alignParentBottom="true"   />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/discovered_devices_list"
+        android:layout_above="@id/scan_btn"
+        android:layout_alignParentTop="true"
+        >
+
+
+
+    </ListView>
+</RelativeLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/available_insole_status"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="insole_id"
+        android:id="@+id/available_insole_name"
+        android:layout_gravity="center"
+        android:textSize="24dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+        />
+
+
+
+
+
+
+</LinearLayout>

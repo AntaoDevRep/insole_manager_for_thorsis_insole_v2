@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.kenp.minga.insolesmanager.viewmodel.InsoleViewModel" />
+    </data>
+
+<LinearLayout
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/activity_small_margin"
+    android:background="@color/bg_white"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="22sp"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/insole_name_text_view"
+        android:text="@{viewModel.getName}"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/insole_mac_address_text_view"
+        android:textSize="22sp"
+        android:text="@{viewModel.getMac}"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/insole_side_text_view"
+        android:text="@{viewModel.getInsoleSide}"
+        android:textColor="@color/colorPrimary"
+        android:textSize="22sp"
+        android:onClick="@{viewModel.onPairedInsoleClicked}"
+        android:gravity="center"/>
+
+    <!--
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:onClick="@{viewModel.onPairedInsoleClicked}"
+        android:src="@mipmap/left_insole"
+        android:id="@+id/insole_side_image_view"
+        />
+        -->
+</LinearLayout>
+
+</layout>
